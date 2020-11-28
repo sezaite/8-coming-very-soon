@@ -1,0 +1,43 @@
+/* HERO SECTION */
+
+.hero {
+    background-image: url("../img/hero-image.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+    .hero > img {
+        height: 40px;
+        margin-bottom: calc(var(--hero-space) * 2 );
+    }
+
+    .hero > h1 {
+        display: inline-block;
+        margin-bottom: var(--hero-space);
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 50px;
+        color: #000;
+
+    }
+
+    .hero > p {
+        display: inline-block;
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: calc(var(--hero-space) * 3 );
+        color: #555;
+    }
+
+    .hero > .clock {
+        margin-bottom: calc(var(--hero-space) * 2 );
+    }
+
+    .hero > .form {
+        margin-bottom: var(--hero-space);
+    }
+
+    /* MAIN SECTION */
+

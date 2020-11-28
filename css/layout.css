@@ -2,13 +2,11 @@
     display: grid;
     grid-template-columns: 1fr 200px 300px 300px 200px 1fr;
     width: 100%;
-    background-color: aquamarine;
 }
 
 .container > .row-short {
     display: inline-block;
     grid-column: 3 / 5;
-    background-color: beige;
 }
 
 .container > .row {

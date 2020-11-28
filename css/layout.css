@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 200px 300px 300px 200px 1fr;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.container > .row-short {
+    display: inline-block;
+    grid-column: 3 / 5;
+    background-color: beige;
+}
+
+.container > .row {
+    display: inline-block;
+    grid-column: 2 / 6;
+    background-color: blueviolet;
+}
+
+    .container > .row > .column-left {
+        display: inline-block;
+        float: left;
+        width: 50%;
+    }
+
+    .container > .row > .column-right {
+        display: inline-block;
+        float: left;
+        width: 40%;
+        margin-left: 10%;
+    }

@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 200px 300px 300px 200px 1fr;
     width: 100%;
+    padding: calc(var(--section-padding) * 2) 0;
 }
 
 .container > .row-short {

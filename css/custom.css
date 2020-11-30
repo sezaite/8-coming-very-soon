@@ -1,6 +1,6 @@
 /* HERO SECTION */
 
-.hero {
+.container.hero {
     background-image: url("../img/hero-image.jpg");
     background-size: cover;
     background-position: bottom center;
@@ -8,12 +8,30 @@
     min-height: 100vh;
 }
 
-    .hero > img {
-        height: 40px;
-        margin-bottom: calc(var(--hero-space) * 2 );
+footer.container {
+    padding-top: 0;
+    padding-bottom: calc(var(--section-padding) * 1.5);
+}
+    footer.container > .row-short {
+        margin-top: var(--section-padding);
     }
 
-    .hero > h1 {
+.bg-main-color {
+    background-color: var(--main-color);
+}
+
+
+
+.hero {
+    text-align: center;
+}
+
+    .hero img {
+        height: 40px;
+        margin: calc(var(--hero-space) * 2 ) 0;
+    }
+
+    .hero h1 {
         display: inline-block;
         margin-bottom: var(--hero-space);
         width: 100%;
@@ -23,21 +41,46 @@
 
     }
 
-    .hero > p {
+    .hero p {
         display: inline-block;
         width: 100%;
         font-size: 18px;
         margin-bottom: calc(var(--hero-space) * 3 );
-        color: #555;
+        color: #666;
     }
 
-    .hero > .clock {
+    .hero .clock {
         margin-bottom: calc(var(--hero-space) * 2 );
     }
 
-    .hero > .form {
+    .hero .form {
         margin-bottom: var(--hero-space);
     }
 
     /* MAIN SECTION */
+
+    main h2 {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: var(--main-space);
+        color: #000;
+        font-size: 21px;
+        text-transform: uppercase;
+    }
+    main p {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: var(--main-space);
+        font-size: 18px;
+        line-height: 26px;
+        color: var(--grey-color);
+    }
+        main p > a {
+            color: var(--secondary-color);
+            text-decoration-line: none;
+        }
+    
+    main .form > .btn {
+        float: right;
+    }
 

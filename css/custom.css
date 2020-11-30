@@ -6,6 +6,7 @@
     background-position: bottom center;
     background-attachment: fixed;
     min-height: 100vh;
+    padding-bottom: var(--section-padding);
 }
 
 footer.container {
@@ -99,7 +100,22 @@ footer.container {
     gap: 10px;
     padding: 10px 20px;
     border-bottom: 1px solid #fff;
-}
+ }
+    footer .fa {
+        display: inline-block;
+        width: 40px;
+        padding: 10px;
+        line-height: 20px;
+        color: #fff;
+        text-align: center;
+        border-radius: 50%;
+        transition: all 0.5s;
+    }
+        footer .fa:hover {
+            background-color: #fff;
+            color: var(--main-color);
+        }
+
 
 footer .text-trio {
     display: inline-block;

@@ -12,7 +12,6 @@
 .container > .row {
     display: inline-block;
     grid-column: 2 / 6;
-    background-color: blueviolet;
 }
 
     .container > .row > .column-left {

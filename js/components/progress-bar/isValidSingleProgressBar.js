@@ -1,5 +1,3 @@
-import { progressBarData } from "../../data/progressBarData";
-
 function isValidSingleProgressBar(progressBar) {
     if (typeof progressBar !== 'object') {
         console.error('Error: turi buti objektas');

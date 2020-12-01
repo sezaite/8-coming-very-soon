@@ -1,5 +1,5 @@
 import { renderProgressBar } from './renderProgressBar.js';
-import { isValidProgressBarList } from './isValidProgressBarList.js'
+import { isValidProgressBarsList } from './isValidProgressBarsList.js'
 
 import { isValidSingleProgressBar } from './isValidSingleProgressBar.js'
 /**
@@ -11,7 +11,7 @@ import { isValidSingleProgressBar } from './isValidSingleProgressBar.js'
  * @returns {boolean} funkcijai tinkamai suveikus, grazinamas `true`, priesingu atveju - `false`
  */
 function renderAllProgressBars(data) {
-    if (!isValidProgressBarList(data)) {
+    if (!isValidProgressBarsList(data)) {
         return false;
     }
 
@@ -22,7 +22,22 @@ function renderAllProgressBars(data) {
         }
 
         renderProgressBar(bar.selector, bar.title, bar.value);
-    } return true;
-}
+    }
 
+
+    const allProgressBars = document.querySelectorAll('.progress-bar');
+
+    window.addEventListener('scroll', () => {
+        const screenBottom = innerHeight + scrollY;
+
+        for (let bar of allProgressBars) {
+            const barBottom = bar.offsetHeight + bar.offsetTop; //elemento aukstis + elemento atsistumimas nuo virsaus = elemento apacia
+            if (screenBottom >= barBottom) {
+                bar.classList.add('animate');
+            }
+        }
+    }
+    )
+    return true;
+}
 export { renderAllProgressBars }

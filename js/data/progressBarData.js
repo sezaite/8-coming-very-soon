@@ -1,24 +1,19 @@
 const progressBarData = [
     {
-        selector: '.column.left',
+        selector: '.column-left',
         title: 'dfg',
         value: 60,
-    }
+    },
 
     {
-        selector: '.column.left',
+        selector: '.column-left',
         title: 'amsd',
         value: 90,
-    }
+    },
     {
-        selector: '.column.right',
+        selector: '.column-left',
         title: 'asdmm',
         value: 60,
-    }
-    {
-        selector: '.column.rightt',
-        title: 'ahgsd',
-        value: 70,
     }
 ]
 

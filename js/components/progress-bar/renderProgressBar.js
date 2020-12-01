@@ -20,7 +20,8 @@ function renderProgressBar(selector, title, value) {
     </div>
     <div class="bottom">
         <div class="bar" style="width: ${value}%;">
-        <div class="loader"></div></div>
+            <div class="loader"></div>
+        </div>
     </div>
 </div>`;
 

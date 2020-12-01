@@ -1,10 +1,17 @@
 import { renderProgressBar } from './renderProgressBar.js';
-import { isValidProgressBarList } from ''./isValidProgressBarList.js';
+import { isValidProgressBarList } from './isValidProgressBarList.js'
 
 import { isValidSingleProgressBar } from './isValidSingleProgressBar.js'
-
+/**
+ * 
+ * @param {Object[]} data 
+* @param {string} data[].selector Progress bar pavadinimas
+ * @param {number} data[].value Progress bar reiksme procentais
+ * @param {string} data[].selector css tipo selektorius, akip rasti vieta, kur sugeneruoti turini
+ * @returns {boolean} funkcijai tinkamai suveikus, grazinamas `true`, priesingu atveju - `false`
+ */
 function renderAllProgressBars(data) {
-    if (!isValidProgressBarsList(data)) {
+    if (!isValidProgressBarList(data)) {
         return false;
     }
 
@@ -15,7 +22,7 @@ function renderAllProgressBars(data) {
         }
 
         renderProgressBar(bar.selector, bar.title, bar.value);
-    }
+    } return true;
 }
 
 export { renderAllProgressBars }

@@ -1,5 +1,13 @@
-function isInputValid(data) {
-    if (!Array.osArray(data)) {
+function isInputValid(selector, data) {
+    if (typeof selector !== 'string') {
+        console.error('Error: selektorius turi buti tekstinio tipo');
+        return false;
+    }
+    if (selector === '') {
+        console.error('Error: selektorius negali buti tuscias');
+        return false;
+    }
+    if (!Array.isArray(data)) {
         console.error('Error: social ikonoms generuoti reikia array tipo duomenu');
         return false;
     }

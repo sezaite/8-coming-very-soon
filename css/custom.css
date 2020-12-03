@@ -102,7 +102,7 @@ footer.container {
     border-bottom: 1px solid #fff;
     position: relative;
  }
-    footer .social.fa {
+    footer .fa {
         display: inline-block;
         width: 40px;
         padding: 10px;
@@ -112,7 +112,7 @@ footer.container {
         border-radius: 50%;
         transition: all 0.5s;
     }
-         footer social.fa:hover {
+         footer .fa:hover {
             background-color: #fff;
             color: var(--main-color);
         }
